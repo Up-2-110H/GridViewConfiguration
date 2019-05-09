@@ -43,6 +43,17 @@ $config = [
             ],
         ],
         'db' => $db,
+        'container' => [
+            'definitions' => [
+                'yii\grid\GridView' => [
+                    'formatter' => [
+                        'class' => 'yii\i18n\Formatter',
+                        'nullDisplay' =>'Нет данных'
+
+                    ]
+                ]
+            ]
+        ],
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
